@@ -1,0 +1,13 @@
+{
+  "name": "texl-plugins",
+  "owner": {
+    "name": "Alan Horne"
+  },
+  "plugins": [
+    {
+      "name": "fsharp-lsp",
+      "source": "./plugins/fsharp-lsp",
+      "description": "F# language server for code intelligence"
+    }
+  ]
+}

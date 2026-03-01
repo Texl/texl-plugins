@@ -1,0 +1,25 @@
+{
+  "name": "fsharp-lsp",
+  "description": "F# language server for code intelligence",
+  "version": "1.0.0-beta",
+  "author": {
+    "name": "Alan Horne",
+    "url": "https://github.com/Texl"
+  },
+  "repository": "https://github.com/Texl/fsharp-lsp",
+  "license": "MIT",
+  "lspServers": {
+    "fsharp": {
+      "command": "fsautocomplete",
+      "args": [ "--background-service-enabled" ],
+      "initializationOptions": {
+        "AutomaticWorkspaceInit": true
+      },
+      "extensionToLanguage": {
+        ".fs": "fsharp",
+        ".fsi": "fsharp",
+        ".fsx": "fsharp"
+      }
+    }
+  }
+}
